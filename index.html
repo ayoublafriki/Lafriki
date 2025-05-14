@@ -250,7 +250,7 @@
     }
 
     /* Search section */
-    .menu-header {
+  /*  .menu-header {
       display: flex;
       justify-content: flex-end;
     }
@@ -277,7 +277,8 @@
 
     .search-input.show {
       display: block;
-    }
+    }  
+    */
 
     /* Dark toggle */
     .dark-toggle {
@@ -415,29 +416,29 @@
     }
   }
 
-  function toggleSearch() {
-    const search = document.getElementById("searchInput");
-    search.classList.toggle("show");
+//  function toggleSearch() {
+   // const search = document.getElementById("searchInput");
+   // search.classList.toggle("show");
   }
 
   // Search functionality
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.querySelector("#searchInput input");
+ // document.addEventListener("DOMContentLoaded", function () {
+   // const searchInput = document.querySelector("#searchInput input");
 
-    searchInput.addEventListener("input", function () {
-      const query = searchInput.value.toLowerCase();
-      const cards = document.querySelectorAll(".card");
+   // searchInput.addEventListener("input", function () {
+    //  const query = searchInput.value.toLowerCase();
+    //  const cards = document.querySelectorAll(".card");
 
-      cards.forEach(card => {
-        const text = card.textContent.toLowerCase();
-        if (text.includes(query)) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
-    });
-  });
+    //  cards.forEach(card => {
+      //  const text = card.textContent.toLowerCase();
+      //  if (text.includes(query)) {
+        //  card.style.display = "block";
+      //  } else {
+         // card.style.display = "none";
+     //   }
+     // });
+    //});
+ // });
 
   // Stars animation
   const canvas = document.getElementById("stars");
