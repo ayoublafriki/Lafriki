@@ -277,8 +277,7 @@
 
     .search-input.show {
       display: block;
-    }  
-    
+    }
 
     /* Dark toggle */
     .dark-toggle {
@@ -416,12 +415,12 @@
     }
   }
 
- function toggleSearch() {
+  function toggleSearch() {
     const search = document.getElementById("searchInput");
     search.classList.toggle("show");
   }
 
-  Search functionality
+  // Search functionality
   document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.querySelector("#searchInput input");
 
@@ -438,7 +437,7 @@
         }
       });
     });
- });
+  });
 
   // Stars animation
   const canvas = document.getElementById("stars");
@@ -507,4 +506,4 @@
   cards.forEach(card => observer.observe(card));
 </script>
 </body>
-</html>
+    </html>
