@@ -55,6 +55,15 @@
       margin-top: 10px;
     }
 
+  .header-carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px; /* adjust as needed for your layout */
+    object-fit: cover; /* crop if needed to fit frame */
+    border-radius: 8px; /* optional: smooth corners */
+   }
+
     section {
       padding: 60px 20px;
       max-width: 900px;
@@ -337,8 +346,30 @@
   </a>
 </header>
   
+   <div>
+    <a class="header-carousel" href="https://youtu.be/XhqXOruH7J8" target="_blank">
+    <img src="./The- System-yt.jpg" alt="Ayoub Lafriki reads from his new Book, The System, and takes readers behind the hidden architecture">
+    </a>
+   </div>
+  
 <section class="book-banner">
   <h2>New Releases</h2>
+  <div class="banner-content">
+    <img src="./The-System-cover.png" alt="The System Book Cover" style="max-width: 50%; height: auto;" class="banner-image" />
+    <div class="book-details">
+      <h3>The System: Power, Control, and the Future of Civilization</h3>
+      <p><strong>Release Date:</strong> June 7th, 2025</p>
+      <p>
+        Uncover the hidden architecture behind modern life—from capitalism to media and democracy—through a bold, analytical lens that challenges the way we understand civilization itself.
+      </p>
+      <a href="https://a.co/d/1lS0LCa" target="_blank" class="buy-link">Buy on Amazon</a>
+    </div>
+  </div>
+
+
+
+
+  
   <div class="banner-content">
     <img src="./cover.jpg" alt="Exploring Nothingness Book Cover"style="max-width: 50%; height: auto;"class="banner-image" />
     <div class="book-details">
@@ -506,4 +537,4 @@
   cards.forEach(card => observer.observe(card));
 </script>
 </body>
-    </html>
+</html>
